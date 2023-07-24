@@ -1,0 +1,14 @@
+.main__button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 17px;
+  border-radius: 10px;
+  color: blue;
+  max-width: 300px;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  overflow: hidden;
+  margin: 0;
+  padding: 17px;
+}

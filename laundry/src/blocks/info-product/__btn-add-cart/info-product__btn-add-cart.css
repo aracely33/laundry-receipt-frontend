@@ -1,0 +1,8 @@
+.info-product__btn-add-cart {
+  border: none;
+  background: none;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 10px;
+  cursor: pointer;
+}

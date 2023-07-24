@@ -1,0 +1,15 @@
+.main {
+  width: 68.75%;
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 321px) {
+  .main {
+    max-width: 320px;
+    margin: 0 0 38.25px 0;
+  }
+}

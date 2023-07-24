@@ -1,0 +1,14 @@
+.main__title {
+  align-self: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 32px;
+  color: #ffffff;
+  max-width: 300px;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
