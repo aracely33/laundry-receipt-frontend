@@ -16,7 +16,7 @@ export default function NewOrderPopup(props) {
   const [selectedQuantity, setSelectedQuantity] = useState(0);
 
   const [orderNumber, setOrderNumber] = useState(0);
-  console.log(tableData);
+  //console.log(tableData);
   const handleConceptChange = (e) => {
     const selectedConcept = e.target.value;
     console.log(selectedConcept);

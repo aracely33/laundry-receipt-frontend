@@ -16,6 +16,7 @@
 @import url(./blocks/cart-total/cart-total.css);
 @import url(./blocks/total-pagar/total-pagar.css);
 @import url(./blocks/hidden-cart/hidden-cart.css);
+@import url(./blocks/btn-clear-all/btn-clear-all.css);
 
 @import url(./blocks/container-items/container-items.css);
 @import url(./blocks/item/item.css);
