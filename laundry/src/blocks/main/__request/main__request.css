@@ -1,5 +1,4 @@
 .main__request {
-  flex-direction: column;
   display: flex;
   justify-content: space-evenly;
 }

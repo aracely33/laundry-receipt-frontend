@@ -28,7 +28,7 @@ function Header({
   return (
     <>
       <header className="header">
-        <h1>Servicios</h1>
+        <h1>Le atiende:</h1>
 
         <div className="container-icon">
           <div

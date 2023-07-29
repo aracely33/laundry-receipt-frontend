@@ -22,6 +22,10 @@
 @import url(./blocks/item/item.css);
 @import url(./blocks/item/__figure/item__figure.css);
 @import url(./blocks/item/__image/item__image.css);
+@import url(./blocks/item/__image/_staff/item__image_staff.css);
+@import url(./blocks/item/__name/item__name.css);
+@import url(./blocks/item/__button/item__button.css);
+
 @import url(./blocks/info-product/info-product.css);
 @import url(./blocks/info-product/__price/info-product__price.css);
 @import url(./blocks/info-product/__btn-add-cart/info-product__btn-add-cart.css);
