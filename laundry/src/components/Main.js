@@ -3,6 +3,7 @@ import mainRequestImage from "../images/new-order.svg";
 import { staff } from "./staff";
 function Main(props) {
   function handleClickUserAvatar(avatar) {
+    console.log(props);
     props.onAvatarClick(avatar.target);
   }
 
