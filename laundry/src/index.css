@@ -34,7 +34,7 @@
 
 @import url(./blocks/header/__logo/header__logo.css);
 @import url(./blocks/header/__slogan/header__slogan.css);
-@import url(./blocks/main/__request/main__request.css);
+@import url(./blocks/main/__staff/main__staff.css);
 @import url(./blocks/main/__title/main__title.css);
 @import url(./blocks/main/__button/main__button.css);
 @import url(./blocks/main/__image/main__image.css);

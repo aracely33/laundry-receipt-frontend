@@ -1,5 +1,6 @@
 .item {
   border-radius: 10px;
+  max-width: 150px;
 }
 
 .item:hover {

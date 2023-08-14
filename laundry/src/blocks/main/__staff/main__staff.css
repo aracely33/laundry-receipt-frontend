@@ -1,4 +1,6 @@
-.main__request {
+.main__staff {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 30px;
 }

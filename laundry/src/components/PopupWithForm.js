@@ -1,19 +1,16 @@
 import React from "react";
 
 function PopupWithForm(props) {
-  ///validación de formulario
-  //console.log(props);
-
   const [errors, setErrors] = React.useState({});
   function handleInput(event) {
     if (!event.target.validity.valid) {
       const err = {};
       err[event.target.name] = event.target.validationMessage;
-      setErrors({ ...errors, ...err });
+      setErrors({...errors, ...err});
     } else {
       const err = {};
       err[event.target.name] = "";
-      setErrors({ ...errors, ...err });
+      setErrors({...errors, ...err});
     }
   }
 

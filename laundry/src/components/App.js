@@ -1,36 +1,45 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
+import {useNavigate} from "react-router-dom";
+import api from "../utils/api";
 import Main from "./Main";
 import Header from "./Header";
+import LoginPopupForm from "./LoginPopupForm";
+
 import Footer from "./Footer";
-import { UserContext } from "../contexts/UserContexts";
+import {UserContext} from "../contexts/UserContexts";
 import Popup from "./Popup";
-import NewOrderPopup from "./NewOrderPopup";
+import NewOrderPopup from "./LoginPopupForm";
 import ProductList from "./ProductList";
 import ProtectedRoute from "./ProtectedRoute";
-import { BrowserRouter } from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
+import {data} from "./data";
 
 function App() {
   const [currentUser, setCurrentUser] = React.useState({});
+  const [users, setUsers] = React.useState([]);
 
   const [allProducts, setAllProducts] = useState([]);
   const [total, setTotal] = useState(0);
   const [countProducts, setCountProducts] = useState(0);
 
-  function handleNewOrderClick() {
-    console.log("vamos a hacer una nueva orden");
-    //setNewOrderPopupOpen(true);
-  }
+  const [loggedIn, setLoggedIn] = React.useState(false);
+  const [email, setEmail] = React.useState("");
+  const [token, setToken] = React.useState("");
+  const [isLoginPopupOpen, setisLoginPopupOpen] = React.useState(true);
 
   function handleObtainAvatar(avatar) {
     console.log(avatar);
   }
+
+  React.useEffect(() => {
+    api.getUsers().then((data) => {
+      setUsers(data.data);
+    });
+  }, []); // Ejecuta cuando 'users' cambia
+
   return (
     <>
       <UserContext.Provider value={currentUser}>
-        <Main
-          onAvatarClick={handleObtainAvatar}
-          onNewOrderClick={handleNewOrderClick}
-        />
         <Header
           allProducts={allProducts}
           setAllProducts={setAllProducts}
@@ -39,6 +48,17 @@ function App() {
           countProducts={countProducts}
           setCountProducts={setCountProducts}
         />
+        <Main staff={users} onAvatarClick={handleObtainAvatar} />;
+        <Footer></Footer>
+      </UserContext.Provider>
+      <Popup isOpen={isLoginPopupOpen}>
+        <LoginPopupForm />
+      </Popup>
+    </>
+  );
+}
+
+/*
         <ProductList
           allProducts={allProducts}
           setAllProducts={setAllProducts}
@@ -47,12 +67,9 @@ function App() {
           countProducts={countProducts}
           setCountProducts={setCountProducts}
         />
-      </UserContext.Provider>
-    </>
-  );
-}
 
-/*const [isNewOrderPopupOpen, setNewOrderPopupOpen] = React.useState(false);
+
+const [isNewOrderPopupOpen, setNewOrderPopupOpen] = React.useState(false);
   const [newPlaceLink, setNewPlaceLink] = React.useState("");
   const [newPlaceTitle, setNewPlaceTitle] = React.useState("");
   const [userName, setUserName] = React.useState("");
