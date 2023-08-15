@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import logo from "../images/logoLaundry.svg";
+import {Link, useMatch} from "react-router-dom";
 
 function Header({
   allProducts,
@@ -30,7 +31,7 @@ function Header({
       <header className="header">
         <h1>Le atiende:</h1>
 
-        <div className="container-icon">
+        <div className="container-icon ">
           <div
             className="container-cart-icon"
             onClick={() => setActive(!active)}
