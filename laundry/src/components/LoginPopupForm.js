@@ -7,6 +7,7 @@ export default function LoginPopupForm({
   email,
   password,
   handleLogin,
+  currentUser,
   onClose,
 }) {
   const [formData, setFormData] = React.useState({});
@@ -18,7 +19,7 @@ export default function LoginPopupForm({
 
   const handleChange = (e) => {
     const {name, value} = e.target;
-    console.log(name, value);
+    //console.log(name, value);
     setFormData({
       ...formData,
       [name]: value,
@@ -26,18 +27,20 @@ export default function LoginPopupForm({
   };
 
   const onLogin = (e) => {
-    // const {email, password} = formData;
-    console.log(formData);
+    const {email, password} = formData;
+    //console.log(formData);
+
     e.preventDefault();
     auth
-      .authorize(password, email)
+      .authorize({email, password})
       .then((data) => {
         console.log(data);
-        /*if (data.token) {
-          setFormData({email: "", password: ""});
+        if (data.token) {
           navigate("/");
+          console.log("ya estas dentro ");
           handleLogin();
-        }*/
+          setFormData({email: "", password: ""});
+        }
       })
       .catch((err) => {
         setInfoToolOpen(true);
@@ -48,12 +51,8 @@ export default function LoginPopupForm({
 
   return (
     <>
-      <img
-        alt="holi"
-        style={{height: "100px"}}
-        src="https://unsplash.com/es/fotos/ZCHj_2lJP00"
-      ></img>
       <PopupWithForm
+        currentUser={currentUser}
         title="Inicia Sesión"
         action="Inicia Sesión"
         onClose={onClose}

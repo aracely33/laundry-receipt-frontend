@@ -3,6 +3,15 @@
 @import url(./blocks/main/main.css);
 @import url(./blocks/root/root.css);
 @import url(./blocks/header/header.css);
+@import url(./blocks/header/_opened/heder_opened);
+@import url(./blocks/header/__link/header__link.css);
+@import url(./blocks/header/__close-icon/header__close-icon.css);
+@import url(./blocks/header/__menu-icon/header__menu-icon.css);
+@import url(./blocks/header/__brand/header__brand.css);
+@import url(./blocks/header/__slogan/header__slogan.css);
+@import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/header/__logout-button/header__logout-button.css);
+
 @import url(./blocks/icon-cart/icon-cart.css);
 @import url(./blocks/container-icon/container-icon.css);
 @import url(./blocks/count-products/count-products.css);
@@ -18,6 +27,8 @@
 @import url(./blocks/hidden-cart/hidden-cart.css);
 @import url(./blocks/btn-clear-all/btn-clear-all.css);
 
+@import url(./blocks/register/register.css);
+
 @import url(./blocks/container-items/container-items.css);
 @import url(./blocks/item/item.css);
 @import url(./blocks/item/__figure/item__figure.css);
@@ -32,8 +43,6 @@
 @import url(./blocks/cart-empty/cart-empty.css);
 @import url(./blocks/hidden/hidden.css);
 
-@import url(./blocks/header/__logo/header__logo.css);
-@import url(./blocks/header/__slogan/header__slogan.css);
 @import url(./blocks/main/__staff/main__staff.css);
 @import url(./blocks/main/__title/main__title.css);
 @import url(./blocks/main/__button/main__button.css);
@@ -42,4 +51,11 @@
 @import url(./blocks/popup/_opened/popup_opened.css);
 @import url(./blocks/popup/__container/popup__container.css);
 @import url(./blocks/form/form.css);
+@import url(./blocks/form/__fields/form__fields.css);
+@import url(./blocks/form/__field/form__field.css);
+@import url(./blocks/form/__heading/form__heading.css);
+@import url(./blocks/form/__label/form__label.css);
+@import url(./blocks/form/__input/form__input.css);
+@import url(./blocks/pointer/pointer.css);
+
 @import url(./blocks/close-button/close-button.css);

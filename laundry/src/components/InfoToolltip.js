@@ -1,6 +1,6 @@
 import React from "react";
-import aprove from "../images/success.svg";
-import denied from "../images/failedredCross.svg";
+//import aprove from "../images/success.svg";
+import denied from "../images/Something-wrong.svg";
 
 const InfoTooltip = ({error, infoToolOpen, handleClose}) => {
   return (
@@ -18,6 +18,7 @@ const InfoTooltip = ({error, infoToolOpen, handleClose}) => {
               alt="Icono de rechazo"
               className="popup__image popup__image_type-infoTooltip"
             />
+
             <h2 className="popup__message">
               Uy, algo salió mal. Por favor, inténtalo de nuevo
             </h2>
@@ -25,7 +26,7 @@ const InfoTooltip = ({error, infoToolOpen, handleClose}) => {
         ) : (
           <>
             <img
-              src={aprove}
+              /* src={aprove}*/
               alt="Icono de aprobación"
               className="popup__image popup__image_type-infoTooltip"
             />

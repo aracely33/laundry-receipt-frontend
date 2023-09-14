@@ -1,0 +1,17 @@
+.header__brand {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 761px) {
+  .header__brand {
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .header__brand {
+    max-width: 50px;
+  }
+}

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import * as auth from "../utils/auth";
 import {Link, useNavigate} from "react-router-dom";
-import InfoTooltip from "./InfoTooltip";
+import InfoTooltip from "./InfoToolltip";
 
 const Register = () => {
   const [formData, setFormData] = useState({});
@@ -24,8 +24,10 @@ const Register = () => {
     e.preventDefault();
     const {password, email} = formData;
     auth.register(password, email).then((res) => {
+      console.log(res);
       if (res.data) {
         navigate("/signin", {state: "success"});
+        setFormData({email: "", password: ""});
       } else {
         setError(true);
       }
@@ -35,16 +37,14 @@ const Register = () => {
   return (
     <>
       <div className="register" onSubmit={onRegister}>
-        <form action="" className="form form_begin">
-          <fieldset className="form__fields form__fields_theme-dark form__set">
-            <h2 className="form__heading form__heading_type-form-begin">
-              Regístrate
-            </h2>
-            <div className="form__field form__field_theme-dark">
+        <form action="" className="form ">
+          <fieldset className="form__fields ">
+            <h2 className="form__heading ">Sign Up</h2>
+            <div className="form__field ">
               <label className="form__label">
                 <input
                   type="email"
-                  className="form__input form__input_theme-dark"
+                  className="form__input "
                   placeholder="Correo electrónico"
                   required
                   name="email"
@@ -54,7 +54,7 @@ const Register = () => {
               <label className="form__label">
                 <input
                   type="password"
-                  className="form__input form__input_theme-dark"
+                  className="form__input "
                   placeholder="Contraseña"
                   required
                   name="password"
@@ -63,7 +63,10 @@ const Register = () => {
               </label>
             </div>
 
-            <button className="form__Button form__Button_theme-dark form__submit pointer">
+            <button
+              className="form__button
+             pointer"
+            >
               Regístrate
             </button>
           </fieldset>

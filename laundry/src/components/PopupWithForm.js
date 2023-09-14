@@ -1,6 +1,7 @@
 import React from "react";
 
 function PopupWithForm(props) {
+  //console.log(props);
   const [errors, setErrors] = React.useState({});
   function handleInput(event) {
     if (!event.target.validity.valid) {
@@ -19,10 +20,14 @@ function PopupWithForm(props) {
       return errors[item] !== "";
     });
   }
-
   return (
     <>
       <div className="popup__container popup__container_function-form">
+        <img
+          alt={props.currentUser.fisrt_name}
+          style={{height: "100px", width: "100px"}}
+          src={props.currentUser.avatar}
+        ></img>
         <form
           className="form "
           noValidate

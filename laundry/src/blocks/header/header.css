@@ -1,19 +1,25 @@
 .header {
-  border-bottom: solid 1px #545454;
-  width: 68.75%;
+  width: 78.75%;
   justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  padding: 30px 0 40px 0;
+  padding: 30px 40px;
   margin: 0 auto 36.25px auto;
   background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px gray;
+  opacity: 0.9;
 }
+/*
+@media screen and (max-width: 761px) {
+  .header {
+    margin: 0;
+  }
+}*/
 
 @media screen and (max-width: 321px) {
   .header {
-    width: 100%;
+    padding: 10px 15px;
     margin: 0 0 38.25px 0;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 }

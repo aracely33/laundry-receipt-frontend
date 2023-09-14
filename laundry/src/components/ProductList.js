@@ -1,5 +1,5 @@
 import React from "react";
-import { data } from "./data";
+import {data} from "./data";
 
 function ProductList({
   allProducts,
@@ -10,10 +10,13 @@ function ProductList({
   setTotal,
 }) {
   const onAddProduct = (product) => {
+    console.log(product);
+    console.log(allProducts);
     if (allProducts.find((item) => item.id === product.id)) {
       const products = allProducts.map((item) =>
-        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+        item.id === product.id ? {...item, quantity: item.quantity + 1} : item
       );
+      console.log(products);
       setTotal(total + product.price * product.quantity);
       setCountProducts(countProducts + product.quantity);
 

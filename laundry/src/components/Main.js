@@ -1,15 +1,16 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {Link, useMatch} from "react-router-dom";
 function Main(props) {
-  function handleClickUserAvatar(avatar) {
-    props.onAvatarClick(avatar.target);
+  function handleClickUserAvatar(e) {
+    const userId = parseInt(e.target.id);
+    const person = props.staff.find((person) => person.id === userId);
+    props.onAvatarClick(person);
   }
 
   return (
     <>
       <div className="main">
         <h1 className="main__title">Inicia sesión</h1>
-
         <div className="main__staff">
           {props.staff.map((person) => {
             return (
@@ -23,6 +24,7 @@ function Main(props) {
                       className="item__image item__image_staff "
                       src={person.avatar}
                       alt={person.first_name}
+                      id={person.id}
                     />
                   </button>
                 </figure>
@@ -31,7 +33,11 @@ function Main(props) {
             );
           })}
         </div>
-        <p>Aun no te has registrado ? registrate</p>
+        {useMatch("/signin") && (
+          <Link to="/signup" className="form__link">
+            Aun no te has registrado? únete aquí
+          </Link>
+        )}
       </div>
     </>
   );

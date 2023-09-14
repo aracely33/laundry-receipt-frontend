@@ -3,11 +3,23 @@
   font-style: normal;
   font-weight: 200;
   font-size: 17px;
-  color: #ffffff;
   max-width: 300px;
+  color: black;
   text-overflow: ellipsis;
   white-space: wrap;
   overflow: hidden;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 761px) {
+  .header__slogan {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .header__slogan {
+    font-size: 10px;
+  }
 }

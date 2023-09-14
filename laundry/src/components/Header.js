@@ -1,5 +1,9 @@
-import React, {useState} from "react";
-import logo from "../images/logoLaundry.svg";
+import React, {useContext, useState} from "react";
+import {UserContext} from "../contexts/UserContexts";
+import logoImage from "../images/logoLaundry.svg";
+import closeIcon from "../images/Close-Icon-min.png";
+import toggleIcon from "../images/toggleIcon.svg";
+
 import {Link, useMatch} from "react-router-dom";
 
 function Header({
@@ -9,9 +13,20 @@ function Header({
   setTotal,
   countProducts,
   setCountProducts,
+  handleSignOut,
+  email,
 }) {
   const [active, setActive] = useState(false);
+  const currentUser = useContext(UserContext);
+  const [open, setOpen] = React.useState(false);
+  const onSignOut = () => {
+    handleSignOut();
+    setOpen(false);
+  };
 
+  const handleMenu = () => {
+    setOpen(!open);
+  };
   const onDeleteProduct = (product) => {
     const results = allProducts.filter((item) => item.id !== product.id);
     setTotal(total - product.price * product.quantity);
@@ -28,8 +43,61 @@ function Header({
 
   return (
     <>
-      <header className="header">
-        <h1>Le atiende:</h1>
+      <header className={`header ${open && "header_opened"}`}>
+        <div className="header__brand">
+          <img src={logoImage} alt="Laundry Logo" className="header__logo" />
+          <span className="header__slogan">
+            "Porque los trapitos sucios ya no se lavan en casa"
+          </span>
+        </div>
+
+        {useMatch("/signin") && (
+          <Link to="/signup" className="header__link">
+            Signup
+          </Link>
+        )}
+        {useMatch("/signup") && (
+          <Link to="/signin" className="header__link">
+            Signin
+          </Link>
+        )}
+        {useMatch("/") && (
+          <>
+            <div
+              className={`header__user-info ${
+                open && "header__user-info_opened"
+              }`}
+            >
+              <span className="header__email">{email}</span>
+              <button className="header__logout-button" onClick={onSignOut}>
+                Logout
+              </button>
+            </div>
+            {open ? (
+              <img
+                src={closeIcon}
+                alt="close menu"
+                className="header__close-icon"
+                onClick={handleMenu}
+              />
+            ) : (
+              <img
+                src={toggleIcon}
+                alt="toggleIcon"
+                className="header__menu-icon"
+                onClick={handleMenu}
+              />
+            )}
+          </>
+        )}
+      </header>
+    </>
+  );
+}
+
+export default Header;
+
+/*        <h1>Le atiende: {currentUser.first_name}</h1>
 
         <div className="container-icon ">
           <div
@@ -105,28 +173,4 @@ function Header({
               <p className="cart-empty">El carrito está vacío</p>
             )}
           </div>
-        </div>
-      </header>
-    </>
-  );
-}
-
-export default Header;
-
-/*    
-
-
-
-
-
-
-<header className="header">
-        <img
-          src={logo}
-          className="header__logo"
-          alt="washer machine and liquid soap"
-        />
-        <span className="header__slogan">
-          "Los trapitos sucios ya no se lavan en casa"
-        </span>
-      </header>*/
+        </div>*/
