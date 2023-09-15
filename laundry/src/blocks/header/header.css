@@ -9,15 +9,17 @@
   box-shadow: 5px 5px 15px gray;
   opacity: 0.9;
 }
-/*
+
 @media screen and (max-width: 761px) {
   .header {
     margin: 0;
+    padding: 15px 20px;
   }
-}*/
+}
 
 @media screen and (max-width: 321px) {
   .header {
+    width: 85%;
     padding: 10px 15px;
     margin: 0 0 38.25px 0;
     justify-content: space-between;

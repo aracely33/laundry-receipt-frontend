@@ -5,7 +5,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #cccccc;
   border: none;
   border-bottom: 2px solid #cccccc;
+  margin: 0;
+  padding: 3px;
 }

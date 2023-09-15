@@ -1,5 +1,17 @@
 .register {
-  width: 100%;
+  width: 60%;
   justify-content: center;
   display: flex;
+}
+
+@media screen and (max-width: 761px) {
+  .register {
+    max-width:300px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .register {
+    width: 300px;
+  }
 }

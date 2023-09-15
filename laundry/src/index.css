@@ -56,6 +56,10 @@
 @import url(./blocks/form/__heading/form__heading.css);
 @import url(./blocks/form/__label/form__label.css);
 @import url(./blocks/form/__input/form__input.css);
+@import url(./blocks/form/__button/form__button.css);
+@import url(./blocks/form/__link/form__link.css);
+
+@import url(./blocks/form/__button/form__button.css);
 @import url(./blocks/pointer/pointer.css);
 
 @import url(./blocks/close-button/close-button.css);
