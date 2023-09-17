@@ -23,19 +23,21 @@ function PopupWithForm(props) {
   return (
     <>
       <div className="popup__container popup__container_function-form">
+        <h2 className="form__heading form__heading_type-login">
+          {props.title}
+        </h2>
         <img
           alt={props.currentUser.fisrt_name}
-          style={{height: "100px", width: "100px"}}
+          className="popup__image popup__image_place-login"
           src={props.currentUser.avatar}
         ></img>
         <form
-          className="form "
+          className="form form_type-login"
           noValidate
           name={props.name}
           onInput={handleInput}
         >
           <fieldset className="form__fields form__set">
-            <h2 className="form__heading">{props.title}</h2>
             {props.children}
             <div className="form__field">
               {props.inputs.map(
@@ -81,7 +83,7 @@ function PopupWithForm(props) {
               )}
             </div>
             <button
-              className={`form__Button form__submit popup__button pointer ${
+              className={`form__button form__submit popup__button pointer ${
                 hasErrors() ? "popup__button_disabled" : ""
               }`}
               type="submit"

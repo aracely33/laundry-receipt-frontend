@@ -1,5 +1,5 @@
 .form__input {
-  width: 100%;
+  width: 95%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -9,4 +9,11 @@
   border-bottom: 2px solid #cccccc;
   margin: 0;
   padding: 3px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 321px) {
+  .form__input {
+    padding: 4px;
+  }
 }

@@ -16,3 +16,21 @@
 .close-button:hover {
   opacity: 0.6;
 }
+
+@media screen and (max-width: 761px) {
+  .close-button {
+    min-width: 30px;
+    min-height: 30px;
+    top: -30px;
+    right: -30px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .close-button {
+    min-width: 25px;
+    min-height: 25px;
+    top: -25px;
+    right: -25px;
+  }
+}

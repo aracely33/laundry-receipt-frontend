@@ -19,6 +19,7 @@ function Header({
   const [active, setActive] = useState(false);
   const currentUser = useContext(UserContext);
   const [open, setOpen] = React.useState(false);
+  const [showSlogan, setShowSlogan] = useState(false);
   const onSignOut = () => {
     handleSignOut();
     setOpen(false);
@@ -40,14 +41,26 @@ function Header({
     setTotal(0);
     setCountProducts(0);
   };
+  const handleShowSlogan = () => {
+    setShowSlogan(!showSlogan);
+  };
 
   return (
     <>
       <header className={`header ${open && "header_opened"}`}>
         <div className="header__brand">
-          <img src={logoImage} alt="Laundry Logo" className="header__logo" />
-          <span className="header__slogan">
-            "Porque los trapitos sucios ya no se lavan en casa"
+          <img
+            src={logoImage}
+            alt="Laundry Logo"
+            onClick={handleShowSlogan}
+            className="header__logo"
+          />
+          <span
+            className={`header__slogan ${
+              showSlogan && "header__slogan_showed"
+            }`}
+          >
+            "Los trapitos sucios ya no se lavan en casa"
           </span>
         </div>
 

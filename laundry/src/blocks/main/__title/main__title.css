@@ -4,11 +4,17 @@
   font-style: normal;
   font-weight: 200;
   font-size: 32px;
-  color: #000;
+  color: #fff;
   max-width: 300px;
   text-overflow: ellipsis;
   white-space: wrap;
   overflow: hidden;
   margin: 0;
   padding: 0 0 30px 0;
+}
+
+@media screen and (max-width: 321px) {
+  .main__title {
+    font-size: 20px;
+  }
 }

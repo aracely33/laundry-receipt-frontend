@@ -3,7 +3,7 @@
   justify-content: space-between;
   display: flex;
   padding: 30px 40px;
-  margin: 0 auto 36.25px auto;
+  margin: 0 auto 0 auto;
   background-color: white;
   border-radius: 10px;
   box-shadow: 5px 5px 15px gray;
@@ -12,16 +12,15 @@
 
 @media screen and (max-width: 761px) {
   .header {
-    margin: 0;
     padding: 15px 20px;
   }
 }
 
 @media screen and (max-width: 321px) {
   .header {
-    width: 85%;
+    width: 75%;
     padding: 10px 15px;
-    margin: 0 0 38.25px 0;
+    margin: 0;
     justify-content: space-between;
   }
 }

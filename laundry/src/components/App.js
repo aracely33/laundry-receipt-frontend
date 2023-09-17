@@ -123,7 +123,7 @@ function App() {
           <Route exact path="/signup" element={<Register />} />
         </Routes>
         <Footer></Footer>
-        <Popup isOpen={isLoginPopupOpen}>
+        <Popup isOpen={isLoginPopupOpen} onClose={() => closeAllPopups()}>
           <LoginPopupForm
             handleLogin={handleLogin}
             currentUser={currentUser}

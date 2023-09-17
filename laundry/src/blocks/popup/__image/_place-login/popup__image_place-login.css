@@ -1,0 +1,16 @@
+.popup__image_place-login {
+  border-radius: 50%;
+  max-width: 80px;
+}
+
+@media screen and (max-width: 761px) {
+  .popup__image_place-login {
+    max-width: 70px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .popup__image_place-login {
+    max-width: 50px;
+  }
+}

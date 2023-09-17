@@ -5,6 +5,7 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  row-gap: 15px;
   align-items: center;
   position: absolute;
   top: 110px;
@@ -14,7 +15,8 @@
 @media screen and (max-width: 761px) {
   .popup__container {
     padding: 10px;
-    max-width: 200px;
+    min-width: 230px;
+    top: 60px;
   }
 }
 @media screen and (max-width: 321px) {
@@ -22,5 +24,6 @@
     min-width: unset;
     padding: 10px;
     max-width: 200px;
+    top: 50px;
   }
 }

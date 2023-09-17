@@ -2,7 +2,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 200;
-  font-size: 17px;
+  font-size: 15px;
   max-width: 300px;
   color: black;
   text-overflow: ellipsis;
@@ -21,6 +21,6 @@
 @media screen and (max-width: 321px) {
   .header__slogan {
     display: none;
-    font-size: 10px;
+    font-size: 7px;
   }
 }

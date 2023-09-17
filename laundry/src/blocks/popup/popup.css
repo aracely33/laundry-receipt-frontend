@@ -1,8 +1,8 @@
 .popup {
   margin: auto;
   padding: 0;
-  width: 100vw;
-  max-height: 100vh;
+  /*width: 100vw;
+  max-height: 100vh;*/
   position: fixed;
   top: 0;
   left: 0;
@@ -22,3 +22,10 @@
   -ms-flex-align: center;
   align-items: center;
 }
+/*
+@media screen and (max-width: 321px) {
+  .popup {
+    width: unset;
+    max-height: unset;
+  }
+}*/

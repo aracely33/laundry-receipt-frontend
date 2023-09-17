@@ -40,41 +40,6 @@ export const authorize = ({email, password}) => {
     .catch((error) => {
       console.error("Error:", error);
     });
-  /*
-    return fetch("https://reqres.in/api/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      email: email,
-      password: password,
-    }),
-  })
-    .then((res) => {
-      if (!res.ok) {
-        console.log(res);
-        console.error(
-          `Network response not ok: ${res.status} - ${res.statusText}`
-        );
-        throw new Error("Network response was not ok");
-      }
-      return res.json();
-    })
-    .then((data) => {
-      console.log(data);
-      if (data.token) {
-        localStorage.setItem("jwt", data.token);
-
-        return data;
-      } else {
-        throw new Error("Token not found in response");
-      }
-    })
-    .catch((err) => {
-      console.error("Authorization error:", err);
-      throw err; // Propagar el error para que el llamador pueda manejarlo
-    });*/
 };
 
 export const checkToken = (token) => {
@@ -103,8 +68,8 @@ fetch("https://reqres.in/api/login", {
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-    email: email,
-    password: password
+    email: "eve.holt@reqres.in",
+    password: "cityslicka"
   }),
 })
   .then((response) => response.json())
