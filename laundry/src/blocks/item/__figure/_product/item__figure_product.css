@@ -1,0 +1,9 @@
+.item__figure_product {
+  width: 100%;
+}
+
+@media screen and (max-width: 321px) {
+  .item__figure_product {
+    width: 40%;
+  }
+}

@@ -1,5 +1,17 @@
 .container-items {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+
+  row-gap: 10px;
+  justify-content: space-evenly;
+
+  align-items: center;
+}
+
+@media screen and (max-width: 321px) {
+  .container-items {
+    width: 85%;
+    justify-content: unset;
+  }
 }

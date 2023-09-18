@@ -5,3 +5,12 @@
   flex-direction: column;
   gap: 10px;
 }
+
+@media screen and (max-width: 321px) {
+  .info-product {
+    width: 30%;
+    display: flex;
+
+    padding: 0;
+  }
+}

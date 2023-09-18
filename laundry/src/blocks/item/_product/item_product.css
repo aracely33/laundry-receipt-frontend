@@ -1,0 +1,14 @@
+.item_product {
+  background-color: white;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 321px) {
+  .item_product {
+    width: 100%;
+    display: flex;
+    max-width: unset;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

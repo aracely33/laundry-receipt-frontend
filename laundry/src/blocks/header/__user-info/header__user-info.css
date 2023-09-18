@@ -1,0 +1,6 @@
+.header__user-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding: 15px;
+}

@@ -6,3 +6,10 @@
   padding: 15px 10px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 321px) {
+  .info-product__btn-add-cart {
+    padding: 2px;
+    font-size: 10px;
+  }
+}

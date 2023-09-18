@@ -2,3 +2,9 @@
   font-size: 18px;
   font-weight: 900;
 }
+
+@media screen and (max-width: 321px) {
+  .info-product__price {
+    font-size: 15px;
+  }
+}

@@ -9,3 +9,11 @@
 .item__image:hover {
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 321px) {
+  .item__image {
+    width: 50%;
+    height: 70%;
+    object-fit: contain;
+  }
+}

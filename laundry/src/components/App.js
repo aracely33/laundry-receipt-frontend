@@ -7,7 +7,6 @@ import * as auth from "../utils/auth";
 import ProtectedRoute from "./ProtectedRoute";
 import LoginPopupForm from "./LoginPopupForm";
 import Register from "./Register";
-
 import Footer from "./Footer";
 import {UserContext} from "../contexts/UserContexts";
 import Popup from "./Popup";
@@ -54,7 +53,7 @@ function App() {
     handleTokenCheck();
   }, [loggedIn, navigate]);
   function handleObtainAvatar(avatar) {
-    setCurrentUser(avatar); //
+    setCurrentUser(avatar);
     setisLoginPopupOpen(true);
   }
 
@@ -67,7 +66,7 @@ function App() {
     api.getUsers().then((data) => {
       setUsers(data.data);
     });
-  }, []); // Ejecuta cuando 'users' cambia
+  }, []);
 
   //Para la lógica de login
   const handleLogin = () => {
@@ -91,8 +90,8 @@ function App() {
           countProducts={countProducts}
           setCountProducts={setCountProducts}
           handleSignOut={handleSignOut}
-          email={email} //aquí más adelante será el user
-        />
+          // email={email} //aquí más adelante será el user
+        ></Header>
         <Routes>
           <Route
             path="/"

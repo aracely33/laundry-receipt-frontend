@@ -14,7 +14,7 @@ function Main(props) {
         <div className="main__staff">
           {props.staff.map((person) => {
             return (
-              <div key={person.id} className="item">
+              <div key={person.id} className="item ">
                 <figure className="item__figure">
                   <button
                     className="item__button"
@@ -44,7 +44,3 @@ function Main(props) {
 }
 
 export default Main;
-
-/*  <Link to="/" className="Link">
-            ¿Aún no eres miembro? Regístrate aquí
-          </Link>*/

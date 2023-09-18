@@ -1,5 +1,6 @@
 @import url(./vendor/normalize.css);
 @import url(./fonts/fonts.css);
+@import url(./blocks/text/text.css);
 @import url(./blocks/main/main.css);
 @import url(./blocks/root/root.css);
 @import url(./blocks/header/header.css);
@@ -10,6 +11,8 @@
 @import url(./blocks/header/__brand/header__brand.css);
 @import url(./blocks/header/__slogan/header__slogan.css);
 @import url(./blocks/header/__slogan/_showed/header__slogan_showed.css);
+@import url(./blocks/header/__user-info/header__user-info.css);
+@import url(./blocks/header/__user-info-text/header__user-info-text.css);
 
 @import url(./blocks/header/__logo/header__logo.css);
 @import url(./blocks/header/__logout-button/header__logout-button.css);
@@ -33,13 +36,16 @@
 
 @import url(./blocks/container-items/container-items.css);
 @import url(./blocks/item/item.css);
+@import url(./blocks/item/_product/item_product.css);
 @import url(./blocks/item/__figure/item__figure.css);
+@import url(./blocks/item/__figure/_product/item__figure_product.css);
 @import url(./blocks/item/__image/item__image.css);
 @import url(./blocks/item/__image/_staff/item__image_staff.css);
 @import url(./blocks/item/__name/item__name.css);
 @import url(./blocks/item/__button/item__button.css);
 
 @import url(./blocks/info-product/info-product.css);
+@import url(./blocks/info-product/__title/info-product__title.css);
 @import url(./blocks/info-product/__price/info-product__price.css);
 @import url(./blocks/info-product/__btn-add-cart/info-product__btn-add-cart.css);
 @import url(./blocks/cart-empty/cart-empty.css);

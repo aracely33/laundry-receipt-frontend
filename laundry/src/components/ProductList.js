@@ -34,8 +34,8 @@ function ProductList({
     <>
       <div className="container-items">
         {data.map((product) => (
-          <div key={product.id} className="item">
-            <figure className="item__figure">
+          <div key={product.id} className="item item_product">
+            <figure className="item__figure item__figure_product">
               <img
                 className="item__image"
                 src={product.img}
@@ -43,11 +43,13 @@ function ProductList({
               />
             </figure>
             <div className="info-product">
-              <h2>{product.nameProduct}</h2>
-              <p className="info-product__price">${product.price}</p>
+              <h2 className="info-product__title text">
+                {product.nameProduct}
+              </h2>
+              <p className="info-product__price text">${product.price}</p>
               <button
                 onClick={() => onAddProduct(product)}
-                className="info-product__btn-add-cart"
+                className="info-product__btn-add-cart text"
               >
                 Añadir al carrito
               </button>

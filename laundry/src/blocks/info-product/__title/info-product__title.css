@@ -1,0 +1,9 @@
+.info-product__title {
+  font-size: 17px;
+}
+
+@media screen and (max-width: 321px) {
+  .info-product__title {
+    font-size: 15px;
+  }
+}
