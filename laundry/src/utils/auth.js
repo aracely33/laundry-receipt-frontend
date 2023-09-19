@@ -15,7 +15,6 @@ export const register = (password, email) => {
 };
 
 export const authorize = ({email, password}) => {
-  console.log(email, password);
   return fetch(`${BASE_URL}login`, {
     method: "POST",
     headers: {
@@ -51,34 +50,3 @@ export const checkToken = (token) => {
     },
   }).then((res) => res.json());
 };
-
-/*
-
-fetch("https://reqres.in/api/login", {
-    method: "POST",
-    body: JSON.stringify({eve.holt@reqres.in, cityslicka}),
-
-
-  })
-  
-  corregido:
-  fetch("https://reqres.in/api/login", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-    email: "eve.holt@reqres.in",
-    password: "cityslicka"
-  }),
-})
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((error) => {
-    console.error("Error:", error);
-  }); 
-  
-  
-  */

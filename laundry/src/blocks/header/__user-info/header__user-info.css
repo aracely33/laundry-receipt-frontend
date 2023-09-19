@@ -4,3 +4,12 @@
   row-gap: 15px;
   padding: 15px;
 }
+
+@media screen and (max-width: 321px) {
+  .header__user-info {
+    display: none;
+    max-width: 70px;
+    padding: 0;
+    row-gap: 0;
+  }
+}

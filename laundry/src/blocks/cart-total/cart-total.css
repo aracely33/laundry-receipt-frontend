@@ -6,7 +6,9 @@
   gap: 20px;
 }
 
-.cart-total h3 {
-  font-size: 20px;
-  font-weight: 700;
+@media screen and (max-width: 321px) {
+  .cart-total {
+    font-size: 13px;
+    padding: 0;
+  }
 }

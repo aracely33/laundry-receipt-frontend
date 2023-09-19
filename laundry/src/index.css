@@ -12,6 +12,7 @@
 @import url(./blocks/header/__slogan/header__slogan.css);
 @import url(./blocks/header/__slogan/_showed/header__slogan_showed.css);
 @import url(./blocks/header/__user-info/header__user-info.css);
+@import url(./blocks/header/__user-info/_showed/header__user-info_showed.css);
 @import url(./blocks/header/__user-info-text/header__user-info-text.css);
 
 @import url(./blocks/header/__logo/header__logo.css);
@@ -31,6 +32,7 @@
 @import url(./blocks/total-pagar/total-pagar.css);
 @import url(./blocks/hidden-cart/hidden-cart.css);
 @import url(./blocks/btn-clear-all/btn-clear-all.css);
+@import url(./blocks/buy-button/buy-button.css);
 
 @import url(./blocks/register/register.css);
 

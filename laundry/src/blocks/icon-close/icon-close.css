@@ -4,6 +4,12 @@
 }
 
 .icon-close:hover {
-  stroke: red;
   cursor: pointer;
+}
+
+@media screen and (max-width: 321px) {
+  .icon-close {
+    max-width: 15px;
+    max-height: 15px;
+  }
 }

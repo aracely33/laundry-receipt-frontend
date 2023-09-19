@@ -1,5 +1,6 @@
 .info-product__price {
   font-size: 18px;
+  margin: 0;
   font-weight: 900;
 }
 

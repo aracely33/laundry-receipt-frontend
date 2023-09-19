@@ -19,7 +19,6 @@ export default function LoginPopupForm({
 
   const handleChange = (e) => {
     const {name, value} = e.target;
-    //console.log(name, value);
     setFormData({
       ...formData,
       [name]: value,
@@ -28,18 +27,17 @@ export default function LoginPopupForm({
 
   const onLogin = (e) => {
     const {email, password} = formData;
-    //console.log(formData);
 
     e.preventDefault();
     auth
       .authorize({email, password})
       .then((data) => {
-        console.log(data);
         if (data.token) {
           navigate("/");
-          console.log("ya estas dentro ");
           handleLogin();
+
           setFormData({email: "", password: ""});
+          onClose();
         }
       })
       .catch((err) => {

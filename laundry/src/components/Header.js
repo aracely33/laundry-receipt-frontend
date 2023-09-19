@@ -74,7 +74,7 @@ function Header({
             />
             <div
               className={`header__user-info ${
-                open && "header__user-info_opened"
+                open && "header__user-info_showed"
               }`}
             >
               <span className="header__user-info-text text">

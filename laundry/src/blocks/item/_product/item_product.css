@@ -1,6 +1,12 @@
 .item_product {
   background-color: white;
-  max-width: 200px;
+  min-width: 250px;
+}
+
+@media screen and (max-width: 531px) {
+  .item_product {
+    min-width: 140px;
+  }
 }
 
 @media screen and (max-width: 321px) {

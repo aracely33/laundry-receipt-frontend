@@ -32,13 +32,10 @@ function App() {
       if (localStorage.getItem("jwt")) {
         const jwt = localStorage.getItem("jwt");
         setToken(jwt);
-        console.log(jwt);
         auth
           .checkToken(jwt)
           .then((res) => {
-            console.log(res.data);
             if (res.data) {
-              console.log(res.data);
               setEmail(res.data.email);
               setCurrentUser(res.data);
               setLoggedIn(true);

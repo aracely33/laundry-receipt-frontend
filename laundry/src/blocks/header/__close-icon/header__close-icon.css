@@ -1,8 +1,16 @@
 .header__close-icon {
-    max-width: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  max-width: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: black;
+}
+.header__close-icon:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 321px) {
+  .header__close-icon {
+    max-width: 15px;
+    max-height: 15px;
   }
-  .header__close-icon:hover {
-    opacity: 0.6;
-  }
+}

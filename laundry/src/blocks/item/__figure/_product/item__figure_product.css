@@ -5,5 +5,6 @@
 @media screen and (max-width: 321px) {
   .item__figure_product {
     width: 40%;
+    padding: 10px;
   }
 }

@@ -1,3 +1,9 @@
 .titulo-producto-carrito {
   font-size: 20px;
 }
+
+@media screen and (max-width: 321px) {
+  .titulo-producto-carrito {
+    font-size: 10px;
+  }
+}

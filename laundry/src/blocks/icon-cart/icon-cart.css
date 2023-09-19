@@ -7,3 +7,10 @@
 .icon-cart:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 321px) {
+  .icon-cart {
+    max-width: 30px;
+    max-height: 30px;
+  }
+}

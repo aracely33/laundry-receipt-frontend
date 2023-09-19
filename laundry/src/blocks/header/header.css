@@ -7,7 +7,8 @@
   background-color: white;
   border-radius: 10px;
   box-shadow: 5px 5px 15px gray;
-  opacity: 0.9;
+  opacity: 1;
+  z-index: 1;
 }
 
 @media screen and (max-width: 761px) {
@@ -18,9 +19,9 @@
 
 @media screen and (max-width: 321px) {
   .header {
-    width: 75%;
+    position: fixed;
+    top: 2px;
     padding: 10px 15px;
     margin: 0;
-    justify-content: space-between;
   }
 }

@@ -17,3 +17,11 @@
 #contador-productos {
   font-size: 12px;
 }
+
+@media screen and (max-width: 321px) {
+  .count-products {
+    max-width: 15px;
+    max-height: 15px;
+    top: 50%;
+  }
+}

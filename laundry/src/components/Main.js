@@ -35,7 +35,7 @@ function Main(props) {
         </div>
         {useMatch("/signin") && (
           <Link to="/signup" className="form__link">
-            Aun no te has registrado? únete aquí
+            Didn't register yet? Join us!
           </Link>
         )}
       </div>

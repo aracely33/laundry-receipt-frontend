@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, Link} from "react";
 
 export default function BuyCart({
   setCountProducts,
@@ -8,6 +8,7 @@ export default function BuyCart({
   total,
   setTotal,
 }) {
+  const [confirmBuy, setConfirmBuy] = useState(false);
   const [active, setActive] = useState(false);
   const onDeleteProduct = (product) => {
     const results = allProducts.filter((item) => item.id !== product.id);
@@ -22,6 +23,7 @@ export default function BuyCart({
     setTotal(0);
     setCountProducts(0);
   };
+
   return (
     <>
       <div className="container-icon ">
@@ -51,9 +53,10 @@ export default function BuyCart({
           {allProducts.length ? (
             <>
               <div className="row-product ">
+                <button className="buy-button text">Buy now</button>
                 {allProducts.map((product) => (
                   <div className="cart-product" key={product.id}>
-                    <div className="info-cart-product">
+                    <div className="info-cart-product text">
                       <span className="cantidad-producto-carrito">
                         {product.quantity}
                       </span>
@@ -84,15 +87,15 @@ export default function BuyCart({
               </div>
 
               <div className="cart-total ">
-                <h3>Total:</h3>
-                <span className="total-pagar">${total}</span>
+                <h3 className="text">Total:</h3>
+                <span className="total-pagar text">${total}</span>
               </div>
-              <button onClick={onCleanCart} className="btn-clear-all">
+              <button onClick={onCleanCart} className="btn-clear-all text">
                 Vaciar carrito
               </button>
             </>
           ) : (
-            <p className="cart-empty">El carrito está vacío</p>
+            <p className="cart-empty text">El carrito está vacío</p>
           )}
         </div>
       </div>
