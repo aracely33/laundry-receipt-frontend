@@ -7,11 +7,12 @@ import * as auth from "../utils/auth";
 import ProtectedRoute from "./ProtectedRoute";
 import LoginPopupForm from "./LoginPopupForm";
 import Register from "./Register";
+import Summary from "./Summary";
 import Footer from "./Footer";
 import {UserContext} from "../contexts/UserContexts";
 import Popup from "./Popup";
 import ProductList from "./ProductList";
-import {Route, Routes} from "react-router-dom";
+import {Route, Routes, useLocation, useMatch} from "react-router-dom";
 
 function App() {
   const [currentUser, setCurrentUser] = React.useState({});
@@ -27,6 +28,7 @@ function App() {
   const [token, setToken] = React.useState("");
   const [isLoginPopupOpen, setisLoginPopupOpen] = React.useState(false);
   const navigate = useNavigate();
+  const match = useMatch("/buy");
   React.useEffect(() => {
     const handleTokenCheck = () => {
       if (localStorage.getItem("jwt")) {
@@ -39,6 +41,9 @@ function App() {
               setEmail(res.data.email);
               setCurrentUser(res.data);
               setLoggedIn(true);
+              if (match) {
+                return;
+              }
               navigate("/");
             }
           })
@@ -96,6 +101,21 @@ function App() {
             element={<ProtectedRoute loggedIn={loggedIn} />}
           >
             <Route
+              path="/buy"
+              element={
+                <Summary
+                  allProducts={allProducts}
+                  setAllProducts={setAllProducts}
+                  total={total}
+                  setTotal={setTotal}
+                  countProducts={countProducts}
+                  setCountProducts={setCountProducts}
+                  email={email}
+                  password={password}
+                ></Summary>
+              }
+            />
+            <Route
               path="/"
               element={
                 <ProductList
@@ -111,6 +131,7 @@ function App() {
               }
             />
           </Route>
+
           <Route
             exact
             path="/signin"

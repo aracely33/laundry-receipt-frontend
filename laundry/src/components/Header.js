@@ -62,6 +62,7 @@ function Header({
             Signin
           </Link>
         )}
+
         {useMatch("/") && (
           <>
             <BuyCart
@@ -72,6 +73,46 @@ function Header({
               allProducts={allProducts}
               setAllProducts={setAllProducts}
             />
+            <Link to="/buy" className="header__link">
+              Ir a pagar
+            </Link>
+            <div
+              className={`header__user-info ${
+                open && "header__user-info_showed"
+              }`}
+            >
+              <span className="header__user-info-text text">
+                Le atiende: {currentUser.first_name}
+              </span>
+              <button
+                className="header__logout-button header__user-info-text text"
+                onClick={onSignOut}
+              >
+                Logout
+              </button>
+            </div>
+            {open ? (
+              <img
+                src={closeIcon}
+                alt="close menu"
+                className="header__close-icon"
+                onClick={handleMenu}
+              />
+            ) : (
+              <img
+                src={toggleIcon}
+                alt="toggleIcon"
+                className="header__menu-icon"
+                onClick={handleMenu}
+              />
+            )}
+          </>
+        )}
+        {useMatch("/buy") && (
+          <>
+            <Link to="/" className="header__link">
+              Volver a la lista de productos
+            </Link>
             <div
               className={`header__user-info ${
                 open && "header__user-info_showed"

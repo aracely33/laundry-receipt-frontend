@@ -1,4 +1,6 @@
-import React, {useState, Link} from "react";
+import React, {useState} from "react";
+import {Link} from "react-router-dom";
+import Summary from "./Summary";
 
 export default function BuyCart({
   setCountProducts,
@@ -17,7 +19,6 @@ export default function BuyCart({
     setCountProducts(countProducts - product.quantity);
     setAllProducts(results);
   };
-
   const onCleanCart = () => {
     setAllProducts([]);
     setTotal(0);
@@ -53,7 +54,10 @@ export default function BuyCart({
           {allProducts.length ? (
             <>
               <div className="row-product ">
-                <button className="buy-button text">Buy now</button>
+                <Link to="/buy">
+                  <button className="buy-button text">Buy now</button>
+                </Link>
+
                 {allProducts.map((product) => (
                   <div className="cart-product" key={product.id}>
                     <div className="info-cart-product text">

@@ -1,5 +1,6 @@
 import React from "react";
 import {data} from "./data";
+import Product from "./Product";
 
 function ProductList({
   allProducts,
@@ -31,27 +32,11 @@ function ProductList({
     <>
       <div className="container-items">
         {data.map((product) => (
-          <div key={product.id} className="item item_product">
-            <figure className="item__figure item__figure_product">
-              <img
-                className="item__image"
-                src={product.img}
-                alt={product.nameProduct}
-              />
-            </figure>
-            <div className="info-product">
-              <h2 className="info-product__title text">
-                {product.nameProduct}
-              </h2>
-              <p className="info-product__price text">${product.price}</p>
-              <button
-                onClick={() => onAddProduct(product)}
-                className="info-product__btn-add-cart text"
-              >
-                Añadir al carrito
-              </button>
-            </div>
-          </div>
+          <Product
+            onAddProduct={onAddProduct}
+            key={product?.id}
+            product={product}
+          ></Product>
         ))}
       </div>
     </>
