@@ -2,7 +2,7 @@
   font-size: 13px;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 761px) {
   .header__user-info-text {
     font-size: 10px;
     flex-wrap: wrap;

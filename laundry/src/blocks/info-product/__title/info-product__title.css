@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 761px) {
   .info-product__title {
     font-size: 15px;
     margin: 0;

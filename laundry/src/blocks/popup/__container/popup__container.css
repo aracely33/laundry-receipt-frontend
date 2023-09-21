@@ -1,5 +1,6 @@
 .popup__container {
-  min-width: 430px;
+  /*min-width: 430px;*/
+  min-width: 230px;
   background-color: whitesmoke;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
@@ -8,10 +9,21 @@
   row-gap: 15px;
   align-items: center;
   position: absolute;
-  top: 110px;
-  padding: 30px;
+  top: 25px;
+  /*top: 110px;*/
+  padding: 10px;
+  /*padding: 30px;*/
 }
 
+@media screen and (max-width: 850px) {
+  .popup__container {
+    min-width: unset;
+    padding: 10px;
+    max-width: 200px;
+  }
+}
+
+/*
 @media screen and (max-width: 761px) {
   .popup__container {
     padding: 10px;
@@ -26,4 +38,4 @@
     max-width: 200px;
     top: 50px;
   }
-}
+}*/

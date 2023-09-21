@@ -8,7 +8,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 761px) {
   .icon-cart {
     max-width: 30px;
     max-height: 30px;

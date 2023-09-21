@@ -5,7 +5,7 @@
   padding: 15px;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 761px) {
   .header__user-info {
     display: none;
     max-width: 70px;

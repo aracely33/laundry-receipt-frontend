@@ -10,12 +10,12 @@
   border-bottom-right-radius: 10px;
   font-family: inherit;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
   transition: all 0.3s ease;
 }
 
 .btn-clear-all:hover {
   background-color: #333;
   transform: scale(1.03);
-  border-radius: 0;
+  border-radius: 5px;
 }

@@ -2,13 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
+  padding: 10px;
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 761px) {
   .cart-product {
-    padding: 10px;
+    padding: 2px;
   }
 }

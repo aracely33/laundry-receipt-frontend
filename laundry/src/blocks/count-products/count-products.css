@@ -18,7 +18,7 @@
   font-size: 12px;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 761px) {
   .count-products {
     max-width: 15px;
     max-height: 15px;

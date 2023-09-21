@@ -9,9 +9,9 @@
   align-items: center;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 761px) {
   .container-items {
-    padding-top: 30px;
+    padding-top: 90px;
     width: 85%;
     justify-content: unset;
   }

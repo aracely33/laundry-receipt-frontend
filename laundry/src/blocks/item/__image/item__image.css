@@ -11,6 +11,16 @@
   transform: scale(1.2);
 }
 
+@media screen and (max-width: 850px) {
+  .item__image {
+    border-radius: 10px;
+    object-fit: cover;
+    max-width: 183px;
+    min-height: 120px;
+    max-height: 100px;
+  }
+}
+/*
 @media screen and (max-width: 321px) {
   .item__image {
     border-radius: 10px;
@@ -19,4 +29,4 @@
     max-height: 100px;
     object-fit: cover;
   }
-}
+}*/

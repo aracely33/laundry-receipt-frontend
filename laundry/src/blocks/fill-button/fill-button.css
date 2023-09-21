@@ -1,0 +1,13 @@
+.fill-button {
+  background-color: transparent;
+  border: 2px solid #191b1d; /* Color del borde */
+  color: #1e2123; /* Color del texto */
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.fill-button:hover {
+  background-color: #8b76a0; /* Cambiar el fondo al pasar el cursor */
+  color: #fff; /* Cambiar el color del texto al pasar el cursor */
+}

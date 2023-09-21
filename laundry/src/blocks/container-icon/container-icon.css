@@ -1,9 +1,4 @@
 .container-icon {
   position: relative;
-}
-
-@media screen and (max-width: 321px) {
-  .container-icon {
-    margin: 0 20px;
-  }
+  margin: 0 20px;
 }

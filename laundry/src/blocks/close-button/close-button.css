@@ -1,36 +1,28 @@
 .close-button {
   padding: 0;
   margin: 0;
-  min-width: 40px;
-  min-height: 40px;
+  min-width: 30px;
+  min-height: 30px;
   border: none;
   background: url(../../images/Crossclose-button.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #000;
   position: absolute;
-  top: -40px;
-  right: -40px;
+  top: -30px;
+  right: -30px;
+  border-radius: 5px;
 }
 
 .close-button:hover {
   opacity: 0.6;
 }
 
-@media screen and (max-width: 761px) {
+@media screen and (max-width: 850px) {
   .close-button {
-    min-width: 30px;
-    min-height: 30px;
-    top: -30px;
-    right: -30px;
-  }
-}
-
-@media screen and (max-width: 321px) {
-  .close-button {
-    min-width: 25px;
-    min-height: 25px;
-    top: -25px;
-    right: -25px;
+    min-width: 20px;
+    min-height: 20px;
+    top: -20px;
+    right: -20px;
   }
 }

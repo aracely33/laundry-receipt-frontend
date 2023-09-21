@@ -73,9 +73,7 @@ function Header({
               allProducts={allProducts}
               setAllProducts={setAllProducts}
             />
-            <Link to="/buy" className="header__link">
-              Ir a pagar
-            </Link>
+
             <div
               className={`header__user-info ${
                 open && "header__user-info_showed"
@@ -110,8 +108,8 @@ function Header({
         )}
         {useMatch("/buy") && (
           <>
-            <Link to="/" className="header__link">
-              Volver a la lista de productos
+            <Link to="/" className="link header__link">
+              Back to ProductList
             </Link>
             <div
               className={`header__user-info ${

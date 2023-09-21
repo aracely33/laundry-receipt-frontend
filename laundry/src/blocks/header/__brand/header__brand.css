@@ -6,12 +6,13 @@
 
 @media screen and (max-width: 761px) {
   .header__brand {
+    max-width: 50px;
     max-width: 100px;
   }
 }
 
+/*
 @media screen and (max-width: 321px) {
   .header__brand {
-    max-width: 50px;
   }
-}
+}*/

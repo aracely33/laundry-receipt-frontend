@@ -30,14 +30,7 @@
   }
 }
 
-@media screen and (max-width: 769px) {
-  .header__logo {
-    width: 40%;
-    max-height: 40px;
-  }
-}
-
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 761px) {
   .header__logo {
     max-width: 50px;
     max-height: 50px;

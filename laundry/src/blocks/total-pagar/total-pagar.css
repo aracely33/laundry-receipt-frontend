@@ -3,7 +3,7 @@
   font-weight: 900;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 761px) {
   .total-pagar {
     font-size: 15px;
   }

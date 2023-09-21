@@ -7,9 +7,9 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 761px) {
   .icon-close {
-    max-width: 15px;
-    max-height: 15px;
+    width: 15px;
+    height: 15px;
   }
 }

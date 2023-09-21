@@ -3,7 +3,7 @@ import aprove from "../images/Ok-pana.svg";
 import denied from "../images/Something-wrong.svg";
 import Popup from "./Popup";
 
-const InfoTooltip = ({error, infoToolOpen, handleClose}) => {
+const InfoTooltip = ({error, infoToolOpen, handleClose, confirm}) => {
   return (
     <>
       <Popup isOpen={infoToolOpen} onClose={() => handleClose()}>
@@ -24,6 +24,15 @@ const InfoTooltip = ({error, infoToolOpen, handleClose}) => {
               <h2 className="popup__message">
                 Something went wrong.Try it again!
               </h2>
+            </>
+          ) : confirm ? (
+            <>
+              <img
+                src={aprove}
+                alt="Icono de aprobación"
+                className="popup__image popup__image_type-infoTooltip"
+              />
+              <h2 className="popup__message">Productos confirmados!</h2>
             </>
           ) : (
             <>

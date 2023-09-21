@@ -18,8 +18,10 @@
 @import url(./blocks/header/__logo/header__logo.css);
 @import url(./blocks/header/__logout-button/header__logout-button.css);
 
+@import url(./blocks/link/link.css);
 @import url(./blocks/icon-cart/icon-cart.css);
 @import url(./blocks/container-icon/container-icon.css);
+@import url(./blocks/container-cart-icon/container-cart-icon.css);
 @import url(./blocks/count-products/count-products.css);
 @import url(./blocks/container-cart-products/container-cart-products.css);
 @import url(./blocks/cart-product/cart-product.css);
@@ -33,10 +35,13 @@
 @import url(./blocks/hidden-cart/hidden-cart.css);
 @import url(./blocks/btn-clear-all/btn-clear-all.css);
 @import url(./blocks/buy-button/buy-button.css);
+@import url(./blocks/buy-button/_border/buy-botton_border.css);
 
 @import url(./blocks/register/register.css);
 
 @import url(./blocks/container-items/container-items.css);
+@import url(./blocks/container-items/_summary/container-items_summary.css);
+
 @import url(./blocks/item/item.css);
 @import url(./blocks/item/_product/item_product.css);
 @import url(./blocks/item/__figure/item__figure.css);
@@ -77,6 +82,9 @@
 @import url(./blocks/pointer/pointer.css);
 
 @import url(./blocks/close-button/close-button.css);
+@import url(./blocks/summary/sumary.css);
 
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__text/footer__text.css);
+@import url(./blocks/text/_clear-tone/text_clear-tone.css);
+@import url(./blocks/fill-button/fill-button.css);

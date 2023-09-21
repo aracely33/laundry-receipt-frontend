@@ -83,7 +83,7 @@ function PopupWithForm(props) {
               )}
             </div>
             <button
-              className={`form__button form__submit popup__button pointer ${
+              className={`form__button fill-button form__submit popup__button pointer ${
                 hasErrors() ? "popup__button_disabled" : ""
               }`}
               type="submit"

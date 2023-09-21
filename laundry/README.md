@@ -1,70 +1,79 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Lavandería App 🧺
 
-## Available Scripts
+¡Bienvenido a la aplicación frontend de Lavandería! Esta aplicación está diseñada para ayudarte a gestionar tus compras de productos de lavandería de manera eficiente. Aquí encontrarás una breve guía sobre cómo utilizar la aplicación y algunos detalles importantes.
 
-In the project directory, you can run:
+![Lavandería App](app-screenshot.png)
 
-### `npm start`
+## Características 🌟
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Registro de usuarios ✍️
+- Inicio de sesión de usuarios 🔐
+- Visualización de productos disponibles 🧼
+- Agregar productos al carrito de compras 🛒
+- Revisión y confirmación de productos comprados 📦
+- Utiliza React, JavaScript, rutas, React Router-DOM, hooks y componentes funcionales 🚀
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Uso 🚀
 
-### `npm test`
+1. **Registro e Inicio de Sesión**: En la página de inicio, puedes registrarte como nuevo usuario utilizando la API proporcionada en [https://reqres.in/](enlace-a-tu-api-de-registro) o iniciar sesión siguiendo los pasos de la página.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Explora los Productos**: Después de iniciar sesión, serás redirigido a la página principal donde encontrarás una lista de productos de lavandería disponibles para comprar.
 
-### `npm run build`
+3. **Añade Productos al Carrito**: Haz clic en el botón "Añadir al carrito" en los productos que deseas comprar. Puedes agregar múltiples productos. 🛍️
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Revisa tu Carrito**: Dirígete al componente "BuyCart" para revisar la lista de productos que has agregado al carrito de compras. Aquí podrás ver una lista detallada de los artículos seleccionados.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **Confirma tu Compra**: Una vez que hayas revisado tu carrito de compras, puedes confirmar tu compra haciendo clic en el botón "Buy Now". Serás redirigido a una página de confirmación de productos. 🎉
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instalación y Ejecución 🛠️
 
-### `npm run eject`
+Para ejecutar esta aplicación en tu entorno local, sigue estos pasos:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clona este repositorio en tu máquina local:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone git@github.com:aracely33/laundry-receipt-frontend.git
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Navega al directorio del proyecto:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   cd laundry
+   ```
 
-## Learn More
+3. Instala las dependencias utilizando npm o yarn:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm install
+   # o
+   yarn install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Ejecuta la aplicación:
 
-### Code Splitting
+   ```bash
+   npm start
+   # o
+   yarn start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+La aplicación estará disponible en tu navegador en `http://localhost:3000/`. 🌐
 
-### Analyzing the Bundle Size
+## Contribución 🤝
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+¡Agradecemos tus contribuciones! Si deseas colaborar en el desarrollo de esta aplicación, por favor, sigue estos pasos:
 
-### Making a Progressive Web App
+1. Crea un fork del repositorio.
+2. Crea una rama para tu contribución: `git checkout -b mi-contribucion`.
+3. Realiza tus cambios y asegúrate de que la aplicación funcione correctamente.
+4. Envía un pull request a la rama principal del repositorio. 🚀
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Contacto 📧
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros en [yuki_oh91@hotmail.com]. 📩
 
-### Deployment
+¡Gracias por usar la aplicación de Lavandería! 👕👖
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

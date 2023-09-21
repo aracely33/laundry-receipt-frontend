@@ -1,9 +1,11 @@
 .titulo-producto-carrito {
   font-size: 20px;
+  margin: 4px;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 761px) {
   .titulo-producto-carrito {
+    margin: 0;
     font-size: 10px;
   }
 }

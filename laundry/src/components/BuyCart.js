@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-import Summary from "./Summary";
 
 export default function BuyCart({
   setCountProducts,
@@ -10,7 +9,6 @@ export default function BuyCart({
   total,
   setTotal,
 }) {
-  const [confirmBuy, setConfirmBuy] = useState(false);
   const [active, setActive] = useState(false);
   const onDeleteProduct = (product) => {
     const results = allProducts.filter((item) => item.id !== product.id);
@@ -54,7 +52,7 @@ export default function BuyCart({
           {allProducts.length ? (
             <>
               <div className="row-product ">
-                <Link to="/buy">
+                <Link className="link" to="/buy">
                   <button className="buy-button text">Buy now</button>
                 </Link>
 

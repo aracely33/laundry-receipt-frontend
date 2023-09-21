@@ -1,0 +1,7 @@
+.summary {
+  display: flex;
+  padding-top: 94px;
+  width: 80%;
+  row-gap: 10px;
+  flex-direction: column;
+}

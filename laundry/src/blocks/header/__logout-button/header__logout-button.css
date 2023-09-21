@@ -13,7 +13,7 @@
   opacity: 0.6;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 761px) {
   .header__logout-button {
     font-size: 10px;
   }

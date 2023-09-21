@@ -3,18 +3,12 @@
   min-width: 250px;
 }
 
-@media screen and (max-width: 531px) {
-  .item_product {
-    min-width: 140px;
-  }
-}
-
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 761px) {
   .item_product {
     width: 100%;
     display: flex;
     max-width: unset;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }

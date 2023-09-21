@@ -10,15 +10,9 @@
 
 @media screen and (max-width: 761px) {
   .container-cart-products {
-    top: 102px;
-    right: -145px;
-  }
-}
-
-@media screen and (max-width: 321px) {
-  .container-cart-products {
-    right: 13px;
-    max-width: 150px;
-    top: 40px;
+    max-height: 337px;
+    min-width: 169px;
+    top: 7px;
+    right: 28px;
   }
 }

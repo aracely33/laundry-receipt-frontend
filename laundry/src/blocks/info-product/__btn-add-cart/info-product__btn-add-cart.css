@@ -6,9 +6,15 @@
   padding: 15px 10px;
   cursor: pointer;
   border-radius: 0 0 10px 10px;
+  transition: all 0.4s ease;
 }
 
-@media screen and (max-width: 321px) {
+.info-product__btn-add-cart:hover {
+  background-color: #b28bbc;
+  transform: scale(1.03);
+}
+
+@media screen and (max-width: 761px) {
   .info-product__btn-add-cart {
     padding: 10px 2px;
     font-size: 11px;

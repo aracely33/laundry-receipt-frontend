@@ -92,7 +92,6 @@ function App() {
           countProducts={countProducts}
           setCountProducts={setCountProducts}
           handleSignOut={handleSignOut}
-          // email={email} //aquí más adelante será el user
         ></Header>
         <Routes>
           <Route

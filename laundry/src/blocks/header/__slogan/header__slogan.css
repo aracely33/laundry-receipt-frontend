@@ -14,13 +14,8 @@
 
 @media screen and (max-width: 761px) {
   .header__slogan {
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 321px) {
-  .header__slogan {
     display: none;
+    font-size: 13px;
     font-size: 7px;
   }
 }

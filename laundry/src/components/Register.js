@@ -7,7 +7,6 @@ const Register = () => {
   const [formData, setFormData] = useState({});
   const [infoToolOpen, setInfoToolOpen] = React.useState(false);
   const [error, setError] = React.useState(false);
-  const [sloganOpen, setSloganOpen] = useState(false);
   const navigate = useNavigate();
   const handleChange = (e) => {
     const {name, value} = e.target;
@@ -65,7 +64,7 @@ const Register = () => {
             </div>
 
             <button
-              className="form__button
+              className="form__button fill-button
              pointer"
             >
               Regístrate

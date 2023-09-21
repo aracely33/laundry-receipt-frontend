@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 761px) {
   .cart-empty {
     font-size: 15px;
   }

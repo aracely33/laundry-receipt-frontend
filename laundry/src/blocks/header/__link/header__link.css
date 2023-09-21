@@ -1,16 +1,27 @@
 .header__link {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: black;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: center;
+  color: black;
+  border-radius: 11px;
+  align-self: center;
+  padding: 2px;
+  text-decoration: none;
+  min-width: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header__link:hover {
+  color: #555555;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 761px) {
+  .header__link {
+    max-width: 70px;
   }
-  
-  @media screen and (max-width: 773px) {
-    .header__link {
-      font-size: 10px;
-      max-width: 50px;
-    }
-  }
+}
