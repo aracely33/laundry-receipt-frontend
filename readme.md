@@ -3,7 +3,7 @@
 
 ¡Bienvenido a la aplicación frontend de Lavandería! Esta aplicación está diseñada para ayudarte a gestionar tus compras de productos de lavandería de manera eficiente. Aquí encontrarás una breve guía sobre cómo utilizar la aplicación y algunos detalles importantes.
 
-![Lavandería App](app-screenshot.png)
+![Lavandería App](laundry-app-muestra.png)
 
 ## Características 🌟
 
